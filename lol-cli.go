@@ -18,7 +18,7 @@ type SummonerNameResponse struct {
 	Id            int    `json:id`
 	AccountId     int    `json:accountId`
 	Name          string `json:name`
-	PfofileIconId int    `json:profileIconId`
+	ProfileIconId int    `json:profileIconId`
 	RevisionDate  int64  `json:revisionDate`
 	SummonerLevel int    `json:summonerLevel`
 }
@@ -110,6 +110,6 @@ func main() {
 		errors.Wrap(decerr, "decorde error:")
 	}
 
-	println(apiResponce.Name)
+	fmt.Printf("id:%d \nname:%s\niconId:%d\n", apiResponce.Id, apiResponce.Name, apiResponce.ProfileIconId)
 
 }
