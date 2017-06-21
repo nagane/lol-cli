@@ -107,7 +107,7 @@ func main() {
 
 	var apiResponce SummonerNameResponse
 	if decerr := decodeBody(httpResponse, &apiResponce); decerr != nil {
-		errors.Wrap(decerr, "errornandeeeee")
+		errors.Wrap(decerr, "decorde error:")
 	}
 
 	println(apiResponce.Name)
