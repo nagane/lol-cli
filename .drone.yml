@@ -1,8 +1,7 @@
 pipeline:
 
   hello:
-    image: alpine:3.6
+    image: alpine
 
     command:
       - echo "hello world"
-      - echo "test"
