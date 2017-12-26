@@ -110,6 +110,7 @@ func main() {
 		errors.Wrap(decerr, "decorde error:")
 	}
 
+	// test insert
 	fmt.Printf("id:%d \nname:%s\niconId:%d\n", apiResponce.Id, apiResponce.Name, apiResponce.ProfileIconId)
 
 }
